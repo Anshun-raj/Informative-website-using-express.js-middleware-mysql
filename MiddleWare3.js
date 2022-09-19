@@ -49,9 +49,9 @@ router.post('/enquiry',encoder,checkUrl,function(req,res){
             if(err) throw err;
             res.send("Data stored successfully ");  
         })
-        con.query(data,function(err,res1){
+        con.query(data,function(err,res2){
             if(err) throw err;
-            console.log(res1);
+            console.log(res2);
         })
 
         
