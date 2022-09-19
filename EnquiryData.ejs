@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enquiry Page</title>
+    </head>
+    <style>
+        body{
+            background-color: azure;
+        }
+        #info{
+            width: 300px;
+            height: 200px;
+            background-color: black;
+            padding-top: 30px;
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 550px;
+        }
+        h3{
+            margin-top: 220px;
+            margin-left: 600px;
+            position: absolute;
+            text-align: center;
+            color: red;
+        }
+        #btn{
+            padding: 5px 10px;
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        label{
+            color: whitesmoke;
+        }
+       
+    </style>
+    <body>
+          <%- include('common1/nav');-%>
+            <h2>Enquiry Page</h2>
+                <div>
+                    <center>
+                    <h3>Please fill the form below</h3>
+                        <form id="info" method="post" action="">
+                            <label>Name:-</label>
+                            <input type="text" placeholder="Enter your name" name="name" id="name" required/><br><br>
+
+                            <label>City:-</label>
+                            <input type="text" placeholder="Enter your city name" name="city" id="city" required/><br><br>
+ 
+                            <label>Age:-</label>
+                            <input type="number" placeholder="Enter your age" name="age" id="age" required/><br><br>
+
+                            <label>Gender:-</label>
+                            <select name="gender" id="gender">
+                               <option>Male</option>
+                               <option>Female</option>
+                            </select><br/><br/>
+                            <button type="submit" id="btn">Submit</button>
+                        </form> 
+                    </center>   
+                </div>
+    </body>
+</html>
